@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --text-color:#fff;
+    --black-color:#1f1f20;
+    --charcoal-color:#232425;
+    --gray-color-1:#c5c6c76c;
+    --gray-color-2:#c5c6c7;
+    --pale-blue-color:#D7E5F0;
+    --beige-color:#C9AD93;
+    --taupe-color:#554940;
+    --soft-green-color:#879A77;
+    --background-color-1:#2d3250;
+    --background-color-2:#424769;
+    --background-color-3:#676f9d;
+    --contrast-color:#f9b17a;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    text-decoration: none;
+    font-family: 'Raleway';
+    color: inherit;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+}
+body{
+    background-color: var(--black-color);
+}
+.container, main {
+    width: 100%;
+}
+nav {
+    position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--black-color);
+    top: 0;
+    z-index: 5000;
+    height: 5rem;
+}
+nav a p{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+
+main {
+    width: 100%;
+    background: var(--black-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+main .main-content  {
+    margin: 5rem 0 13rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+}
+
+main .main-content  h1 {
+    font-size: 7rem;
+    margin-bottom: .7rem;
+}
+
+main .main-content  span {
+    font-size: 7rem;
+    color: var(--contrast-color);
+}
+
+main .main-content .slogan p{
+    font-weight: 500;
+    align-self: flex-start;
+    margin-left: 1rem;
+    color: var(--gray-color-1);
+    font-size: 1.6rem;
+}
+
+main .main-content .cta-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin-top: 8rem;
+    width: 100%;
+}
+
+main .main-content .cta-container p {
+    font-size: 2rem;
+    font-weight: 300;
+
+}
+
+.about-us-flexbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-container .about-us-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    min-width: 35rem;
+    height: 30rem;
+    padding: 1rem;
+    border: solid .1rem var(--text-color);
+    border-radius: 2.5rem;
+}
+
+.cta-container .about-us-content h3 {
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+}
+
+.cta-container .about-us-content span {
+    font-size: 4.5rem;
+    color: var(--contrast-color);
+}
+
+main .main-content .btn-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+main .main-content .btn-container p {
+    margin-bottom: 3rem;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+main .main-content button {
+    background: inherit;
+}
+
+main .main-content  img {
+    width: 40rem;
+    filter: invert(1) blur(.3rem) opacity(50%);
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+main .main-content  img:hover {
+    filter: invert(1) blur(0) opacity(100%);
+    scale: 1.1;
+}
+
+.schedule-flexbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.cta-container .schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    min-width: 35rem;
+    padding: 1rem;
+    border: solid .1rem var(--text-color);
+    border-radius: 2.5rem;
+}
+
+.schedule .schedule-title h3 {
+    font-size: 4.5rem;
+    color: var(--contrast-color);
+    margin: 1.5rem 0;
+}
+
+.schedule .schedule-title span {
+    font-size: 4.5rem;
+    color: var(--text-color);
+}
+
+.cta-container .schedule .schedule-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 22rem;
+    justify-content: space-around;
+}
+
+.schedule-content .monday-friday, .saturday-sunday {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.schedule-content .monday-friday span {
+    margin: 0 2rem;
+}
+
+.schedule-content .saturday-sunday span {
+    margin: 0 2rem;
+}
+
+.schedule .schedule-content p {
+    font-size: 2rem;
+}
+.schedule .schedule-content span {
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+/* END OF MAIN CONTENT */
+
+
+
+
+.services-container {
+    background: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1.1rem 0 1rem 0;
+}
+
+.services-title h2 {
+    font-size: 7rem;
+    margin-bottom: 2.5rem;
+    color: var(--contrast-color);
+}
+
+.services {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0rem 0rem 3rem var(--charcoal-color);
+}
+
+.services .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 30rem;
+    height: 30rem;
+    background: var(--black-color);
+    border-radius: 1.2rem;
+}
+
+.services .service-item h3 {
+    font-size: 3rem;
+}
+
+.services .service-item p {
+    font-size: 1.6rem;
+    margin: 2rem 0 6rem 0;
+    padding: 0 3rem;
+}
+
+.services .service-item span {
+    font-size: 1.7rem;
+    color: var(--contrast-color);
+}
+
+        /* END OF SERVICES SECTION */
+
+
+.follow-us_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+}
+
+.follow-title {
+    width: 100%;
+    background: var(--black-color);
+    display: flex;
+    justify-content: center;
+}
+
+.follow-title h3{
+    font-size: 7rem;
+    margin-bottom: 4rem;
+}
+
+.follow-title span {
+    font-size: 7rem;
+    color: var(--contrast-color);
+}
+
+.social-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    box-shadow: 0rem 0rem 3rem var(--charcoal-color), 0rem 0rem 3rem var(--charcoal-color);
+
+}
+
+.social-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.social-container div a img {
+    width: 6rem;
+    margin-bottom: 1rem;
+    filter: invert(1);
+}
+
+
+
+.social-container div p {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: var(--text-color);
+}
+
+        /* END OF FOLLOW US SECTION */
+
+
+
+footer {
+    background: var(--black-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+}
+
+footer .address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 40rem;
+}
+
+footer .address span {
+    font-size: 8rem;
+}
+
+footer .address p {
+    font-size: 1.2rem;
+}
+
+footer .contact-us {
+    display: flex;
+    width: 50rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer .contact-us div {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+footer .contact-us p {
+    font-size: 1.4rem;
+}
+
+footer .contact-us span {
+    margin-right: .9rem;
+}
+
+
+                /* END OF FOOTER */
+
+                /* LAPTOP-TABLET */
+@media screen and (max-width: 1100px) {
+
+    main .main-content .cta-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 100%;
+    } 
+
+    .container {
+        width: 100%;
+    }
+
+    .btn-container {
+        grid-row: 1;
+    }
+
+    .about-us-flexbox {
+        grid-row: 3;
+    }
+    
+    .schedule-flexbox {
+        grid-row: 2;
+    }
+
+    .services .service-item h3    {
+        font-size: 2.5rem;
+    }
+
+    footer {
+        width: 120%;
+        padding: 0 2rem;
+    }
+
+    footer .address {
+        margin-left: 4rem;
+        width: 45%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    footer .address span {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    footer .address p {
+        font-size: 1rem;
+    }
+
+    footer .contact-us {
+        flex-direction: column;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        width: 100rem;
+    }
+
+    footer .contact-us .phone-number {
+        margin-top: 2rem;
+}
+
+    html {
+        margin-left: 15rem;
+    }
+
+}
+
+
+                /* MOBILE */
+@media screen and (max-width: 680px) {
+
+
+    main {
+        width: 100%;
+        height: 135rem;
+    }
+
+    .container {
+        width: 46rem;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    main .main-content h1 {
+        font-size: 3rem;
+    }
+
+    main .main-content span {
+        font-size: 3rem;
+    }
+
+    main .main-content .cta-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr ;
+    } 
+
+    .about-us-flexbox {
+        display: none;
+    }
+
+.schedule .schedule-title h3 {
+        font-size: 3rem;
+    }
+
+.schedule .schedule-title span {
+        font-size: 3rem;
+    }
+
+.cta-container .schedule .schedule-content p {
+        font-size: 1.7rem;
+    }
+
+    .services-container {
+        width: 120%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .services-title h2 {
+        font-size: 4.5rem;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 90%;
+        padding: 0;
+    }
+
+    .services .service-item {
+        max-width: none;
+        padding-right: 10rem;
+    }
+
+    .follow-title h3 {
+        font-size: 4.5rem;
+    }
+
+    .follow-title span {
+        font-size: 4.5rem;
+    }
+
+    .social-container {
+        width: 100%;
+    }
+
+    .social-container div a img {
+        width: 4rem;
+    }
+
+    .social-container div p {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        width: 110%;
+        padding: 0 2rem;
+    }
+
+    footer .address {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    footer .address span {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    footer .address p {
+        font-size: 1rem;
+        width: 7rem;
+    }
+
+    footer .contact-us {
+        flex-direction: column;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        width: 80rem;
+    }
+
+    footer .contact-us .phone-number {
+        margin-top: 2rem;
+}
+
+    html, .container {
+        width: 102vw;
+        margin-left: 0;
+    }   
+
+}
